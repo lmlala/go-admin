@@ -27,6 +27,9 @@ import (
 	"go-admin/common/middleware/handler"
 	"go-admin/common/storage"
 	ext "go-admin/config"
+
+	// ops
+	ops_router "go-admin/app/ops/router"
 )
 
 var (
@@ -54,6 +57,7 @@ func init() {
 
 	//注册路由 fixme 其他应用的路由，在本目录新建文件放在init方法
 	AppRouters = append(AppRouters, router.InitRouter)
+	AppRouters = append(AppRouters, ops_router.InitRouter)
 }
 
 func setup() {

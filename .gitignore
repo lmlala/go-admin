@@ -6,7 +6,7 @@ main.exe
 *.exe
 go-admin
 go-admin.exe
-temp/
+temp/*
 !temp
 vendor
 config/settings.dev.yml
